@@ -40,19 +40,25 @@
 <div
     class="block w-full rounded-md bg-gray-100 overflow-hidden border-2 border-solid border-gray-200"
 >
-    <div class="p-5">
+    <div class="p-3">
         <img
             class="w-full pointer-events-none group-hover:opacity-75 text-center"
             src={image}
             alt=""
         />
-        <p class="text-lg">{title}</p>
-        <a
-            download
-            target="_blank"
-            class="btn btn-xs btn-success"
-            href={downUrl}>down</a
-        >
-        <button on:click={delHandler} class="btn btn-xs btn-del">del</button>
+        <p class="text-md py-2">{title}</p>
+        <div class="text-center">
+            <a
+                download
+                target="_blank"
+                class="btn btn-xs btn-success"
+                href={downUrl}>
+                <i class="fas fa-download pr-2"></i>
+                다운</a
+            >
+            <button on:click={delHandler} class="btn btn-xs btn-delete">
+            <i class="fas fa-trash pr-2"></i>
+            삭제</button>
+        </div>
     </div>
 </div>

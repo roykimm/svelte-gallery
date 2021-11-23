@@ -19,7 +19,9 @@
         <div class="flex mt-5 mr-5">
             <button
                 class="btn btn-sm btn-success ml-auto"
-                on:click={moveRegisterPage}>사진 등록하기</button
+                on:click={moveRegisterPage}>
+                <i class="fas fa-plus pr-2"></i>
+                사진 등록하기</button
             >
         </div>
         <div
