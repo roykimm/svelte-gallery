@@ -4,6 +4,9 @@
     import getGallery from "../../django/getGallery";
     import store from "../../stores/gallerys";
     import { navigate } from "svelte-routing";
+
+    
+
     export let gallery;
 
     const { id, image, title, user, category, created_at, description } =
@@ -42,7 +45,7 @@
 >
     <div class="p-3">
         <img
-            class="w-full pointer-events-none group-hover:opacity-75 text-center"
+            class="w-full hover:opacity-75 text-center cursor-pointer"
             src={image}
             alt=""
         />

@@ -5,7 +5,7 @@
 </script>
 
 <div
-    class="flex justify-between align-center px-5 py-5 text-gray-500 font-bold text-xl bg-green-200"
+    class="flex justify-between align-center px-5 py-5 text-gray-500 font-bold text-xl bg-indigo-50"
 >
     <div class="flex">
         <img

@@ -4,14 +4,22 @@
     import Gallery from "./Gallery.svelte";
     import Loading from "../Loading.svelte";
     import { navigate } from "svelte-routing";
+    import Modal from "./Modal.svelte";
+    let showModal = false;
 
     let tr = $gallerys;
 
     function moveRegisterPage() {
         navigate("/register");
     }
+
+    const toggleModal = () => {
+        showModal = !showModal;
+    };
+
 </script>
 
+<Modal message='I am a prop value' {showModal} on:click={toggleModal}/>
 {#if $gallerys.length === 0}
     <Loading />
 {:else}
